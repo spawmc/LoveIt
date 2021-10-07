@@ -21,6 +21,26 @@ header {
   .header-title-post {
     padding-left: .25rem;
   }
+  @keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  .logo_cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2rem;
+    background: #fe5186;
+    margin-left: 3px;
+    border-radius: 1px;
+    animation: cursor 1s infinite;
+  }
 
   &:hover {
     @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, .1));
